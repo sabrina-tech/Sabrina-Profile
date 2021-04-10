@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, lightgray, white);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.title-font{
+  font-family:'Permanent Marker', cursive;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.sub-font{
+  font-family:'Lato', sans-serif;
+  text-align: center;
+}
+
+fieldset{
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  padding: 50px;
+  margin-right: 10px;
+}
+
+legend{
+  font-size: 2rem;
+  font-family: 'permanent marker', cursive;
+  border: 2px solid blue;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.button {
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  
+  left: 30%;
+  -webkit-transform: translate(-20%);
+  transform: translate(-30%);
+  
+  background-color: #3d6ded;
+  /*border: none;*/
+  border-radius: 3px;
+  border: 2px solid rgb(81, 165, 42);
+  cursor: pointer;
+  display: inline-block;
+  
+  font-size: 18px;
+  
+  margin-top: 50px;
+  margin-left:10px;
+  margin-right: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 120px;
+  
+  
+}
+
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+ 
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.card {
+  align-items: center;
+  background-image: linear-gradient(to bottom right, white, lightgray);
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px;
+  padding: 50px;
+}
+
+.margintop{
+  margin-top: 100px;
+  text-align: center;
+}
+
+/* Navigation bar */
+
+nav{
+  
+  position: fixed;
+  /*border-top: 10px solid pink;
+  border-bottom: 10px solid black;*/
+  padding: 0;
+  width: 100%;
+  top:0;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  /* position: fixed; */
+  top: 0;
+  /*overflow: hidden;
+  ;*/
+  width: 100%;
+  font-size: 18px;
+  margin: 0;
+  padding: 8px;
+  text-decoration: none;
+  /*border: 1px solid red;*/
+  background-color: rgb(31, 29, 29);
+  
+}
+nav li{
+  
+  /*display: inline-block;*/
+  /*border: 3px dashed green;*/
+ flex-basis: 8%;
+ /* width: 10%;*/
+  text-align: left;
+  padding: 2px;
+   
+  }
+
+
+nav a {
+  
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.2rem;
+  color:white;
+  
+  border-radius: 10rem;
+  border: 5px solid rgb(31, 29, 29);
+  display: block;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+
+ 
+}
+
+/* Change background on mouse-over */
+nav a:hover {
+  background-color: rgb(11, 179, 221);
+  color: white;
+  border-bottom: solid rgb(43, 11, 221);
+  border-right: solid rgb(43, 11, 221);
+  /*box-shadow: 0 8px 10px 0 rgba(228, 223, 223, 0.938), 0 6px 10px 0 rgba(248, 240, 240, 0.89);*/
+}
+
+
+.social-media-ul{
+  list-style-type: none;
+  text-align: center;
+  border: 2px dotted blue;
+  padding: 0;
+  margin: 100px;
+}
+
+.social-media-ul li{
+  display: inline-block;
+ 
+}
+
+h1{
+  margin-top:30px;
+  margin-left: 10px;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.9rem;
+  font-weight: normal;
+}
+
+
+
+
+
+.page-wrapper {
+  margin: 100px;
+ /* align-items: center;*/
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+
+  width: 80%;
+	margin: 100px auto;
+	padding: 2em;
+	flex-flow: row nowrap;
+	background-color: aliceblue;
+  
+}
+
+
+
+
+
+
+
+
+
+.profile-image {
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 32px;
+  height: 180px;
+  margin: 50px;
+  width: 180px;
+}
+
+
+/* Style all font awesome icons */
+.fab {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Add a hover effect if you want */
+.fab:hover {
+  opacity: 0.7;
+
+}
+
+/* Set a specific color for each brand */
+
+.fa-home{
+  float:left;
+  margin-right: 3px;
+  margin-bottom: 0;
+}
+/* Facebook */
+.fa-linkedin-in {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-github {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-stack-overflow{
+  background: #55ACEE;
+  color: white;
+}
+
+section {
+	flex-basis: 80%;
+	
+	border: 2px dotted red;
+}
+aside {
+	flex-basis: 33%;
+	border: 2px dotted pink;
+}
+
+form{
+  font-weight: normal;
+}
+
+
+
+
+
+#map {
+  height: 400px;
+  width: 400px;
+}
+
+
+
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+
+.linksfoot li{
+  display: inline-block;
+  border: 2px solid black;
+}
+
+
