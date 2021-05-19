@@ -29,49 +29,64 @@
 <body>
     <div class="page-wrapper">
     <section>
-        <h1>Contact</h1>
-        <p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
+       
 
-    <form>
+    <form name="form1">
         <fieldset>
-        <legend>Your contact information</legend>
-        <label for="first name"> First name (*) </label><br>
-            <input type="text"
-            id="first name" name="first name" required>
-        <br><label for="last name"> Last name </label><br>
-            <input type="text"
-            id="last name" name="last name" required>
-    
-        <br><label for="email">Email (*)</label><br>
-        <input type="email"
-            id="email" name="email">
+        <legend>Contact </legend>
+        <p> Please fill up the form with your details and I will contact you :)</p>
 
+       <br> <label for="firstName"> First name: (*) </label><br>
+            <input class="input1" type="text"
+            id="first name" name="firstName" required>
+        <br><label for="lastName"> Last name: </label><br>
+            <input type="text"
+            id="last name" name="lastName">
+    
+        <br><label for="email">Email: (*)</label><br>
+        <input class="input2" type="email"
+            id="email" name="email" required>
+
+        <p>Please select your age: (*)</p>
+            <input class="input3" type="radio" id="age1" name="age" value="0-20" required>
+            <label for="age2">0 - 20</label><br>
+            
+            <input type="radio" id="age2" name="age" value="21-30">
+            <label for="age3">21 - 30</label><br>  
+            
+            <input type="radio" id="age3" name="age" value="31-50" required>
+            <label for="age4">31 - 50</label><br>
+            
+            <input type="radio" id="age4" name="age" value="51-100">
+            <label for="age5">51 - 100</label><br><br>
+            
         <br><label for="comments">Comments: (*)</label>
-        <textarea id="comments" name="comments" placeholder="Type your comments here">
+        <textarea class="input" id="comments" name="comments" required placeholder="Type your comments here">
         </textarea>
+    <br>
+    <br>
+    <p> OBS: Fields marked with (*) are required.</p>
         </fieldset>
 
 
-   <button type="submit">Submit</button>	
-        </form>				
+    <button class="buttonform" type="submit" onclick="details()" id="demo">Submit</button>
+    </form>				
+    </section>
+    </div>
 
 
-        <footer>
-            <p>This page was built using: HTML, CSS and JavaScript<br></p>
+
+
+<footer>
+    <p id="built-using"></p>
     
-            <ul class=linksfoot>
-              <li><a href="/"> Home</a></li>
-              <li><a href="about.html"> About</a></li>
-              <li><a href="contact.html"> Contact</a></li>
-            </ul>
-          </footer>
-
-
-
-
-
-
-
-<script src="portfolio.js"></script>
+    <ul class=linksfoot>
+            <li><a href="/"> Home</a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+    </ul>
+</footer>
+<div>&#169; Israel Tech Challenge</div>
+<script src="./Contact.js" ></script>
 </body>
 </html>

@@ -11,14 +11,12 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
 
-    <link href="./style.css" rel="stylesheet" />
-    
-
+    <link href="./style.css" rel="stylesheet" /> 
 
 
 </head>
 
-<body>
+    <body>
     <nav>
         <ul>
           <li><a href="/"><i class="fas fa-home"></i>
@@ -34,34 +32,48 @@
         <div class="page-wrapper">
         
             <fieldset>
-            <legend> About </legend>
-         <section> <p> write here.. bla bla bla bla......</p>
+            <legend> About me</legend>
+         <section class=text> <p> I'm a 26 years old brazilian engineer, who is passionated about challenges and always finding a way to get out of the comfort zone.<br>
+         I decided to learn more about programming because I am a fan of computers, creating new things and finding solutions to problems. And coding is fundamentally all of these together.<br>
+         <br>
+         I love to travel and to visit new places. Besides travelling, my other hobbies are eating and hiking, can never get enough of these!
+         <br>
+         <br>
+         I was born in the country of Carnival, on the most exciting city of the country, Rio de Janeiro, but decided to take a new challenge and now I live in Israel. 
+         <br>
+         <br>
+         I´ve lived in couple of different cities, and I hope that soon I can make this list bigger!<br>
+         <br>Rio de Janeiro<br>
+         Cape Town<br>
+         Tel Aviv<br>
+         Mavkiim<br>
+        </p>
         </section>
             </fieldset>
 
 
 
-        <!--<iframe src="https://www.google.com/maps/embed/v1/place?key=<YOUR API KEY>&q=71.0378379,-110.05995059999998"></iframe>-->
-
-
-
-
-
-
-
-
-       
+       <fieldset>
+           <legend> My favourite places</legend>
         <aside>
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470400.41083684337!2d-43.72618325635759!3d-22.91325245850514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20RJ%2C%20Brasil!5e0!3m2!1spt-BR!2sil!4v1617993220273!5m2!1spt-BR!2sil" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>></iframe>
+            <iframe id=myIframe src="http://maps.google.com/maps?q=-22.985240025605123, -43.22425774174553&z=10&output=embed" width="450" height="400" frameborder="10" style="border: 10px" allowfullscreen></iframe>
+        <!--botao previous e next-->
+        <div class="button">
+            <button disabled class="prev btn">&laquo Previous</button>
+            <button class="next btn">Next &raquo;</button>
+        </div>
+    </aside>
+    </fieldset>
+
+
+
+
+    
         
        
-        <!--botao previous e next-->
         
-            <a href="#" class=button>&laquo Previous</a>
-            <a href="https://www.google.com" class=button>Next &raquo;</a>
-      
         
-        </aside>
+        
         
 
 
@@ -79,7 +91,7 @@
 
 
     <footer>
-        <p>This page was built using: HTML, CSS and JavaScript<br></p>
+        <p id="built-using"></p>
 
         <ul class=linksfoot>
           <li><a href="/"> Home</a></li>
@@ -87,13 +99,9 @@
           <li><a href="contact.html"> Contact</a></li>
         </ul>
       </footer>
-
+      <div>&#169; Israel Tech Challenge</div>
    
 
 <script src="./portfolio.js"></script>
-
-
-         
-    
 </body>
 </html>
